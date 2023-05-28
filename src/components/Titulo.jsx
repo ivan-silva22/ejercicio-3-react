@@ -5,9 +5,9 @@ function Titulo(props){
     const [msj, setMsj] = useState('')
 
     return (
-        <div>
-            <h1>Hello {props.nuevoTitulo} {msj}</h1>
-            <button onClick={()=> setMsj('from changed state')}>Click me</button>
+        <div className="p-3">
+            <h1>Hello {props.nuevoTitulo} <span>{msj}</span></h1>
+            <button className="btn btn-primary" onClick={()=> setMsj('from changed state')}>Click me</button>
         </div>
     );
 }
